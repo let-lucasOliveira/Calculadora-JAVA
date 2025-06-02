@@ -145,6 +145,11 @@ public class Calculadora extends javax.swing.JFrame {
         botaoMultiplicacao.setText("*");
         botaoMultiplicacao.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         botaoMultiplicacao.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoMultiplicacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoMultiplicacaoActionPerformed(evt);
+            }
+        });
 
         botaoSub.setText("-");
         botaoSub.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -371,6 +376,9 @@ public class Calculadora extends javax.swing.JFrame {
                     txtResultado.setText(String.valueOf(resultado));
                     break;
                 case "multiplicacao":
+                    resultado = valor1 * valor2;
+                    lblValor1.setText(valor1+"*"+valor2+"=");
+                    txtResultado.setText(String.valueOf(resultado));
                     break;
                 case "divisao":
                     break;
@@ -387,6 +395,14 @@ public class Calculadora extends javax.swing.JFrame {
         valor1 = Double.parseDouble(lblValor1.getText());
         operacao = "subtrair";
     }//GEN-LAST:event_botaoSubActionPerformed
+
+    private void botaoMultiplicacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoMultiplicacaoActionPerformed
+        lblValor1.setText(txtResultado.getText());
+        txtResultado.setText("");    
+        
+        valor1 = Double.parseDouble(lblValor1.getText());
+        operacao = "multiplicacao";
+    }//GEN-LAST:event_botaoMultiplicacaoActionPerformed
 
     /**
      * @param args the command line arguments
