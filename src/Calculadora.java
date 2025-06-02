@@ -30,24 +30,24 @@ public class Calculadora extends javax.swing.JFrame {
 
         txtResultado = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        CE = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        botaoC = new javax.swing.JButton();
+        botaoCE = new javax.swing.JButton();
+        botao7 = new javax.swing.JButton();
+        botao8 = new javax.swing.JButton();
+        botao9 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
+        botaoSoma = new javax.swing.JButton();
+        botaoMultiplicacao = new javax.swing.JButton();
+        botaoSub = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
+        botaoDividir = new javax.swing.JButton();
+        botao0 = new javax.swing.JButton();
+        botaoPonto = new javax.swing.JButton();
+        botaoIgual = new javax.swing.JButton();
         lblValor1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -62,38 +62,38 @@ public class Calculadora extends javax.swing.JFrame {
         jButton1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButton1.setMargin(new java.awt.Insets(26, 26, 26, 26));
 
-        jButton2.setText("C");
-        jButton2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton2.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoC.setText("C");
+        botaoC.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoC.setMargin(new java.awt.Insets(26, 26, 26, 26));
 
-        CE.setText("CE");
-        CE.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        CE.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoCE.setText("CE");
+        botaoCE.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoCE.setMargin(new java.awt.Insets(26, 26, 26, 26));
 
-        jButton4.setText("7");
-        jButton4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton4.setMargin(new java.awt.Insets(26, 26, 26, 26));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        botao7.setText("7");
+        botao7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botao7.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botao7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                botao7(evt);
             }
         });
 
-        jButton5.setText("8");
-        jButton5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton5.setMargin(new java.awt.Insets(26, 26, 26, 26));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botao8.setText("8");
+        botao8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botao8.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botao8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botao8(evt);
             }
         });
 
-        jButton6.setText("9");
-        jButton6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton6.setMargin(new java.awt.Insets(26, 26, 26, 26));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        botao9.setText("9");
+        botao9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botao9.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botao9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                botao9(evt);
             }
         });
 
@@ -102,7 +102,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton8.setMargin(new java.awt.Insets(26, 26, 26, 26));
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                botao4(evt);
             }
         });
 
@@ -111,7 +111,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton9.setMargin(new java.awt.Insets(26, 26, 26, 26));
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                botao5(evt);
             }
         });
 
@@ -120,7 +120,7 @@ public class Calculadora extends javax.swing.JFrame {
         jButton10.setMargin(new java.awt.Insets(26, 26, 26, 26));
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                botao6(evt);
             }
         });
 
@@ -133,22 +133,27 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton13.setText("+");
-        jButton13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton13.setMargin(new java.awt.Insets(26, 26, 26, 26));
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        botaoSoma.setText("+");
+        botaoSoma.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoSoma.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoSoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoSoma(evt);
             }
         });
 
-        jButton14.setText("*");
-        jButton14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton14.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoMultiplicacao.setText("*");
+        botaoMultiplicacao.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoMultiplicacao.setMargin(new java.awt.Insets(26, 26, 26, 26));
 
-        jButton15.setText("-");
-        jButton15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton15.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoSub.setText("-");
+        botaoSub.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoSub.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoSub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoSubActionPerformed(evt);
+            }
+        });
 
         jButton16.setText("2");
         jButton16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -168,32 +173,32 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton18.setText("/");
-        jButton18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton18.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoDividir.setText("/");
+        botaoDividir.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoDividir.setMargin(new java.awt.Insets(26, 26, 26, 26));
 
-        jButton19.setText("0");
-        jButton19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton19.setMargin(new java.awt.Insets(26, 26, 26, 26));
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        botao0.setText("0");
+        botao0.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botao0.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botao0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                botao0ActionPerformed(evt);
             }
         });
 
-        jButton20.setText(".");
-        jButton20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton20.setMargin(new java.awt.Insets(26, 26, 26, 26));
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        botaoPonto.setText(".");
+        botaoPonto.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoPonto.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoPonto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                botaoPontoActionPerformed(evt);
             }
         });
 
-        jButton21.setText("=");
-        jButton21.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton21.setMargin(new java.awt.Insets(26, 26, 26, 26));
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        botaoIgual.setText("=");
+        botaoIgual.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoIgual.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoIgual(evt);
             }
@@ -212,40 +217,40 @@ public class Calculadora extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(txtResultado, javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(CE)
+                            .addComponent(botaoCE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton2)
+                            .addComponent(botaoC)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jButton1))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton4)
+                                    .addComponent(botao7)
                                     .addComponent(jButton8))
                                 .addComponent(jButton11))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton5)
+                                    .addComponent(botao8)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton6))
+                                    .addComponent(botao9))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jButton9)
                                         .addComponent(jButton16)
-                                        .addComponent(jButton19))
+                                        .addComponent(botao0))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jButton17)
                                         .addComponent(jButton10)
-                                        .addComponent(jButton20))))
+                                        .addComponent(botaoPonto))))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jButton13)
-                                .addComponent(jButton14)
-                                .addComponent(jButton15)
-                                .addComponent(jButton18)
-                                .addComponent(jButton21)))))
+                                .addComponent(botaoSoma)
+                                .addComponent(botaoMultiplicacao)
+                                .addComponent(botaoSub)
+                                .addComponent(botaoDividir)
+                                .addComponent(botaoIgual)))))
                 .addGap(0, 16, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -258,66 +263,66 @@ public class Calculadora extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(CE))
+                    .addComponent(botaoC)
+                    .addComponent(botaoCE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton13)
+                .addComponent(botaoSoma)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6)
-                    .addComponent(jButton14))
+                    .addComponent(botao7)
+                    .addComponent(botao8)
+                    .addComponent(botao9)
+                    .addComponent(botaoMultiplicacao))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton8)
                     .addComponent(jButton9)
                     .addComponent(jButton10)
-                    .addComponent(jButton15))
+                    .addComponent(botaoSub))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton11)
                     .addComponent(jButton16)
                     .addComponent(jButton17)
-                    .addComponent(jButton18))
+                    .addComponent(botaoDividir))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton19)
-                            .addComponent(jButton20)))
+                            .addComponent(botao0)
+                            .addComponent(botaoPonto)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jButton21)))
+                        .addComponent(botaoIgual)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void botao7(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao7
         txtResultado.setText(txtResultado.getText()+"7");
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_botao7
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void botao8(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao8
         txtResultado.setText(txtResultado.getText()+"8");
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_botao8
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void botao9(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao9
         txtResultado.setText(txtResultado.getText()+"9");
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_botao9
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void botao4(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao4
         txtResultado.setText(txtResultado.getText()+"4");
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_botao4
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void botao5(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao5
         txtResultado.setText(txtResultado.getText()+"5");
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_botao5
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void botao6(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao6
         txtResultado.setText(txtResultado.getText()+"6");
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_botao6
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         txtResultado.setText(txtResultado.getText()+"1");
@@ -331,13 +336,13 @@ public class Calculadora extends javax.swing.JFrame {
         txtResultado.setText(txtResultado.getText()+"3");
     }//GEN-LAST:event_jButton17ActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void botao0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao0ActionPerformed
         txtResultado.setText(txtResultado.getText()+"0");
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_botao0ActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    private void botaoPontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPontoActionPerformed
         txtResultado.setText(txtResultado.getText()+".");
-    }//GEN-LAST:event_jButton20ActionPerformed
+    }//GEN-LAST:event_botaoPontoActionPerformed
 
     private void botaoSoma(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSoma
         lblValor1.setText(txtResultado.getText());
@@ -354,12 +359,34 @@ public class Calculadora extends javax.swing.JFrame {
     private void botaoIgual(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoIgual
             double resultado;
             valor2 = Double.parseDouble(txtResultado.getText());
-            if(operacao=="soma"){
-                resultado = valor1 + valor2;
-                lblValor1.setText(valor1+"+"+valor2+"=");
-                txtResultado.setText(String.valueOf(resultado));
+            switch(operacao){
+                case "soma":
+                    resultado = valor1 + valor2;
+                    lblValor1.setText(valor1+"+"+valor2+"=");
+                    txtResultado.setText(String.valueOf(resultado));
+                    break;
+                case "subtrair":
+                    resultado = valor1 - valor2;
+                    lblValor1.setText(valor1+"-"+valor2+"=");
+                    txtResultado.setText(String.valueOf(resultado));
+                    break;
+                case "multiplicacao":
+                    break;
+                case "divisao":
+                    break;
+                default:
+                    txtResultado.setText("Operacao invalida :/");
+                    break;
             }
     }//GEN-LAST:event_botaoIgual
+
+    private void botaoSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoSubActionPerformed
+        lblValor1.setText(txtResultado.getText());
+        txtResultado.setText("");    
+        
+        valor1 = Double.parseDouble(lblValor1.getText());
+        operacao = "subtrair";
+    }//GEN-LAST:event_botaoSubActionPerformed
 
     /**
      * @param args the command line arguments
@@ -397,23 +424,23 @@ public class Calculadora extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton CE;
+    private javax.swing.JButton botao0;
+    private javax.swing.JButton botao7;
+    private javax.swing.JButton botao8;
+    private javax.swing.JButton botao9;
+    private javax.swing.JButton botaoC;
+    private javax.swing.JButton botaoCE;
+    private javax.swing.JButton botaoDividir;
+    private javax.swing.JButton botaoIgual;
+    private javax.swing.JButton botaoMultiplicacao;
+    private javax.swing.JButton botaoPonto;
+    private javax.swing.JButton botaoSoma;
+    private javax.swing.JButton botaoSub;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel lblValor1;
