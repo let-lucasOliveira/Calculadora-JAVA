@@ -29,7 +29,7 @@ public class Calculadora extends javax.swing.JFrame {
     private void initComponents() {
 
         txtResultado = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        botaoBackspace = new javax.swing.JButton();
         botaoC = new javax.swing.JButton();
         botaoCE = new javax.swing.JButton();
         botao7 = new javax.swing.JButton();
@@ -58,13 +58,18 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("<-");
-        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton1.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoBackspace.setText("<-");
+        botaoBackspace.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        botaoBackspace.setMargin(new java.awt.Insets(26, 26, 26, 26));
 
         botaoC.setText("C");
         botaoC.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         botaoC.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoCActionPerformed(evt);
+            }
+        });
 
         botaoCE.setText("CE");
         botaoCE.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -231,7 +236,7 @@ public class Calculadora extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(botaoC)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton1))
+                            .addComponent(botaoBackspace))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -272,7 +277,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(botaoBackspace)
                     .addComponent(botaoC)
                     .addComponent(botaoCE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -420,6 +425,10 @@ public class Calculadora extends javax.swing.JFrame {
         operacao = "divisao";
     }//GEN-LAST:event_botaoDividirActionPerformed
 
+    private void botaoCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoCActionPerformed
+       txtResultado.setText("");
+    }//GEN-LAST:event_botaoCActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -460,6 +469,7 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton botao7;
     private javax.swing.JButton botao8;
     private javax.swing.JButton botao9;
+    private javax.swing.JButton botaoBackspace;
     private javax.swing.JButton botaoC;
     private javax.swing.JButton botaoCE;
     private javax.swing.JButton botaoDividir;
@@ -468,7 +478,6 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton botaoPonto;
     private javax.swing.JButton botaoSoma;
     private javax.swing.JButton botaoSub;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton16;
