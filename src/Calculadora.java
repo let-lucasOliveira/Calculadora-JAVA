@@ -181,6 +181,11 @@ public class Calculadora extends javax.swing.JFrame {
         botaoDividir.setText("/");
         botaoDividir.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         botaoDividir.setMargin(new java.awt.Insets(26, 26, 26, 26));
+        botaoDividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoDividirActionPerformed(evt);
+            }
+        });
 
         botao0.setText("0");
         botao0.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -381,6 +386,9 @@ public class Calculadora extends javax.swing.JFrame {
                     txtResultado.setText(String.valueOf(resultado));
                     break;
                 case "divisao":
+                    resultado = valor1 / valor2;
+                    lblValor1.setText(valor1+"/"+valor2+"=");
+                    txtResultado.setText(String.valueOf(resultado));
                     break;
                 default:
                     txtResultado.setText("Operacao invalida :/");
@@ -403,6 +411,14 @@ public class Calculadora extends javax.swing.JFrame {
         valor1 = Double.parseDouble(lblValor1.getText());
         operacao = "multiplicacao";
     }//GEN-LAST:event_botaoMultiplicacaoActionPerformed
+
+    private void botaoDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoDividirActionPerformed
+        lblValor1.setText(txtResultado.getText());
+        txtResultado.setText("");    
+        
+        valor1 = Double.parseDouble(lblValor1.getText());
+        operacao = "divisao";
+    }//GEN-LAST:event_botaoDividirActionPerformed
 
     /**
      * @param args the command line arguments
